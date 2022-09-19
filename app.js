@@ -1,3 +1,6 @@
+// Importing the words array
+import * as arr from './words.js'
+
 // setting up the initial background color of the page
 document.body.style.backgroundColor = "#000000";
 
@@ -43,8 +46,6 @@ input.addEventListener('change', (textInput) => {
 // Function to generate random strings
 function allCaseString() {
     var text = "";
-    var possible = "abcdefghijklmnopqrstuvwxyz";
-    for (var i = 0; i < 5; i++)
-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+    text = arr.words[Math.floor(Math.random() * arr.words.length)];
     return text;
 }
