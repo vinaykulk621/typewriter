@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Mukta", sans-serif;
 }
 .text {
   display: flex;
@@ -8,6 +9,7 @@
   justify-content: center;
   color: white;
   padding: 50px;
+  font-size: 45px;
 }
 .inputText {
   display: flex;
@@ -17,6 +19,9 @@
   width: 300px;
   height: 50px;
   font-size: 45px;
+  caret-color: black;
+  border-radius: 15px;
+  text-align: center;
 }
 .content {
   display: flex;
@@ -24,4 +29,10 @@
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: column;
+}
+.startButton {
+  margin: 30px;
+  padding: 5px 40px;
+  border-radius: 20px;
+  font-size: 40px;
 }

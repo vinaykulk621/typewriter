@@ -1,6 +1,9 @@
 // setting up the initial background color of the page
 document.body.style.backgroundColor = "#000000";
 
+// setting up the initial input field to disabled
+document.getElementById("inputText").disabled = true;
+
 // text selector
 let text = document.getElementById('text');
 
@@ -8,32 +11,34 @@ let text = document.getElementById('text');
 function changeContent() {
     text.innerHTML = allCaseString()
     button.innerHTML = 'reset'
+    document.getElementById("inputText").focus();
+    document.body.style.backgroundColor = "#000000"
+    document.getElementById("inputText").disabled = false;
+    document.querySelector('.inputText').style.backgroundColor = "white";
 }
 
 // input selector
 let inputText = document.getElementsByClassName('inputText');
 
-// start button
+// start/reset button
 let button = document.querySelector('.startButton')
 button.addEventListener('click', changeContent)
-
 
 // Keypress event
 const input = document.querySelector('.inputText')
 input.addEventListener('change', (textInput) => {
-    console.log(textInput.target.value);
-    console.log(text.innerHTML);
     if (text.innerHTML === textInput.target.value) {
         changeContent();
         textInput.target.value = ''
-        document.querySelector('.inputText').style.backgroundColor = "green"
+        document.body.style.backgroundColor = "#8ee388"
+        text.style.color = "#000000"
     }
     else {
         textInput.target.value = ''
-        document.querySelector('.inputText').style.backgroundColor = "red"
+        document.body.style.backgroundColor = "#e44343"
+        text.style.color = "#000000"
     }
 });
-
 
 // Function to generate random strings
 function allCaseString() {
