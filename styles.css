@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 50px;
+}
+.inputText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: azure;
+  width: 300px;
+  height: 50px;
+  font-size: 45px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
