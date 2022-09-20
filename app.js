@@ -2,7 +2,7 @@
 import * as arr from './words.js'
 
 // setting up the initial background color of the page
-document.body.style.backgroundColor = "#000000";
+document.body.style.backgroundColor = "#303030";
 
 // setting up the initial input field to disabled
 document.getElementById("inputText").disabled = true;
@@ -15,7 +15,7 @@ function changeContent() {
     text.innerHTML = allCaseString()
     button.innerHTML = 'reset'
     document.getElementById("inputText").focus();
-    document.body.style.backgroundColor = "#000000"
+    document.body.style.backgroundColor = "#303030"
     document.getElementById("inputText").disabled = false;
     document.querySelector('.inputText').style.backgroundColor = "white";
 }
